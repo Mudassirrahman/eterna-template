@@ -17,20 +17,20 @@ const Hero = ()=>{
 <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
 <div className="carousel-inner">
  <div className="item carousel-item swiper-slide active first-divv">
-            <h1 className=" display-1 hero-h" >Welcome to Eterna</h1>
+            <h1 className=" hero-h" >Welcome to <span>Eterna</span> </h1>
             <p className="hero--p">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
             <button className="hero-b">Read more</button>
         
  </div>
  <div className="item carousel-item swiper-slide secnd-divv">
- <h1 className="display-1 hero-h">Lorem Ipsum Dolor</h1>
+ <h1 className="hero-h">Lorem <span> Ipsum Dolor</span></h1>
             <p className="hero--p">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.
 
 Read More</p>
             <button  className="hero-b">click me</button>
  </div>
  <div className="item carousel-item swiper-slide thrd-divv">
- <h1 className="display-1 hero-h">Sequi ea Dime Lara</h1>
+ <h1 className="hero-h">Sequi ea <span>Dime Lara</span> </h1>
             <p className="hero--p">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.
 
 Read More</p>

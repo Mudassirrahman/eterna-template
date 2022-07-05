@@ -17,9 +17,10 @@ export default function Clients() {
     <>
      <div>
                 <h1 className="client-head">Clients</h1>
-                <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
+                <p className="clint-p"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
             </div>
-     <Swiper
+            <div className="swiper-mrg">
+     <Swiper 
         slidesPerView={1}
         spaceBetween={10}
         autoplay={{
@@ -29,26 +30,44 @@ export default function Clients() {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
+        // navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
-        breakpoints={{
-          555: {
-            slidesPerView: 3,
-            spaceBetween: 3,
-          },
-          640: {
-            slidesPerView: 4,
-            spaceBetween: 4,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
-          },
+        breakpoints={ {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 40
+      },
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 60
+      },
+      640: {
+        slidesPerView: 4,
+        spaceBetween: 80
+      },
+      992: {
+        slidesPerView: 6,
+        spaceBetween: 120
+      },
+        // breakpoints={{
+        //   555: {
+        //     slidesPerView: 3,
+        //     spaceBetween: 3,
+        //   },
+        //   640: {
+        //     slidesPerView: 4,
+        //     spaceBetween: 4,
+        //   },
+        //   768: {
+        //     slidesPerView: 4,
+        //     spaceBetween: 20,
+        //   },
+
+        //   1024: {
+        //     slidesPerView: 6,
+        //     spaceBetween: 60,
+        //   },
         }}
         
       >
@@ -61,7 +80,9 @@ export default function Clients() {
         <SwiperSlide><img className="clint-imag" src="https://bootstrapmade.com/demo/templates/Eterna/assets/img/clients/client-2.png" /></SwiperSlide>
         <SwiperSlide><img className="clint-imag" src="https://bootstrapmade.com/demo/templates/Eterna/assets/img/clients/client-1.png" /></SwiperSlide>
         <SwiperSlide><img className="clint-imag" src="https://bootstrapmade.com/demo/templates/Eterna/assets/img/clients/client-5.png" /></SwiperSlide>
+       
       </Swiper>
+      </div>
     </>
   );
 }

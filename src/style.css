@@ -97,7 +97,7 @@ i.chevron--down{
   display: none;
 }
 @media (max-width:1176px){
-  html{
+  li{
     font-size: 85%;
   }
   header{
@@ -105,7 +105,7 @@ i.chevron--down{
   }
 }
 @media (max-width:1047px){
-  html{
+  li{
     font-size: 75%;
   }
   header{
@@ -113,7 +113,7 @@ i.chevron--down{
   }
 }
 @media (max-width:965px){
-  html{
+  li{
     font-size: 65%;
   }
   header{
@@ -124,6 +124,9 @@ i.chevron--down{
 @media(max-width:881px){
  header #menu-bars{
   display: inline-block;
+}
+li{
+font-size: 14px;
 }
 .nav-menuu{
   position: absolute;
@@ -181,7 +184,6 @@ ul.sub-submenu{
 .hero{
   margin-top: 5.6%;
   text-align: center;
- 
   color: #fff;
 }
 
@@ -209,18 +211,35 @@ ul.sub-submenu{
   width: 100%;
   padding: 10rem;
 }
-.hero-content{
-  display: flex;
-  flex-direction: column;
-  padding: 15rem;
 
-}
 .hero-h{
 color: #3b3b3b;
+font-weight: 700;
+font-size: 48px;
+}
+span{
+  color: #e96b56;
+}
+@media(max-width:768px){
+  .hero-h{
+    font-size: 30px;
+  }
+}
+@media(max-width:615px){
+  .hero-h{
+    font-size: 22px;
+  }
 }
 p.hero--p{
   color: #545454;
   text-align: center;
+  padding: 3rem 10%;
+}
+@media(max-width:768px){
+  p.hero--p{
+
+    padding: 3rem 0;
+  }
 }
 button.hero-b{
   padding:12px 32px;
@@ -277,6 +296,10 @@ button.hero-b{
   text-align: center;
   border-bottom: 5px solid #e96b56;
 }
+.clint-p{
+  text-align: center;
+  margin: 0 7rem;
+}
 .clint-imag{
   width: 116px;
   margin-right: 120px;
@@ -285,14 +308,31 @@ button.hero-b{
   opacity: 0.5;
 
 }
+@media(max-width:1216px){
+  .clint-imag{
+width: 95px;
+  }
+  
+}
+@media(max-width:912px){
+  .clint-imag{
+width: 85px;
+  }
+  
+}
 .clint-imag:hover{
   opacity:1.5 ;
 
 }
+.swiper-mrg{
+  margin: 0 5rem 0 7rem;
+}
 .form-sect{
   padding: 3rem 0;
+  /* margin: 0 7rem; */
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  /* justify-content: space-around; */
   flex-wrap: wrap;
   background-color: #545454;
   align-items: center;
@@ -302,13 +342,20 @@ button.hero-b{
   color: #fff;
   text-align: center;
   margin-bottom: 3rem;
+  margin-left: 7rem;
 }
 .inp-butn{
   padding: 7px ;
   background-color: #fff;
   border-radius: 30px;;
-  margin: 0 auto;
+  margin: 0 4rem 0 8rem;
 
+}
+@media(max-width:1474px){
+  .inp-butn{
+    margin: 0 auto;
+    margin: 0 4rem;
+  }
 }
 input{
   border: none;
@@ -338,11 +385,26 @@ input{
   
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-  justify-items: center;
-  /* flex-wrap: wrap; */
+  /* justify-items: center;
+  flex-wrap: wrap; */
+  gap: 1rem;
 
   
 }
+@media(max-width:1216px){
+  .box{
+    font-size: 12px;
+  }
+  }
+  @media(max-width:768px){
+  .footer ,.box-container{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+
+    }}
+    
+
 .box{
   margin: 0 8rem;
 }
